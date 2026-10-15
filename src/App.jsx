@@ -8,13 +8,13 @@ import Footer from "./Pages/Footer";
 
 const App = () => {
   return (
-    <div className="bg-black">
+    <div>
       <Header />
-      <Hero />
-      <Card />
-      <Refer />
-      <Security />
-      <Partners />
+      {/* <Hero /> */}
+      {/* <Card /> */}
+      {/* <Refer /> */}
+      {/* <Security /> */}
+      {/* <Partners /> */}
       <Footer />
     </div>
   );

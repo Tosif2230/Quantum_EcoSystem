@@ -1,4 +1,4 @@
-import { BsArrowDown } from "react-icons/bs";
+import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
   const ListItems = [
     "Market",
@@ -10,38 +10,44 @@ const Header = () => {
     "Company",
   ];
   return (
-    <section className="flex justify-between">
-      <div className="flex">
-        <img src="/logo.png" alt="logo" className="h-35" />
-        <div className="justify-center items-center mt-10">
-          <h1 className="text-orange-500 text-3xl">QUANTUM</h1>
-          <h2 className="text-red-800 text-xl text-right">echosystem</h2>
+    <nev className="flex flex-col border-amber-50 border">
+      <div className="flex justify-between">
+        <img src="/logo.png" alt="logo" className="h-42 w-auto px-2" />
+        <div className="flex mt-10">
+          {ListItems.map((item) => {
+            return (
+              <a className="text-stone-400 font-semibold text-[18px] p-5">
+                {item}
+              </a>
+            );
+          })}
+        </div>
+        <div className="flex flex-col justify-center px-6  mt-4">
+          <div className="flex flex-row gap-2 mt-8 px-2">
+            <div className="flex flex-row gap-2">
+              <button className="text-white px-3 font-semibold  border border-amber-500 rounded">
+                Sign in
+              </button>
+              <button className="text-white px-3 m-0 font-semibold bg-linear-to-r from-orange-400 to-orange-600 rounded">
+                Register
+              </button>
+            </div>
+            <img
+              src="./src/assets/scanner.png"
+              alt="scanner"
+              className="size-10"
+            />
+          </div>
+          <div className="flex justify-end m-2 py-2">
+            <button className="flex text-white font-semibold border-b border-b-white rounded p-2">
+              White Paper <IoIosArrowDown className="m-1" />
+            </button>
+          </div>
         </div>
       </div>
-      <div className="flex justify-center">
-        {ListItems.map((item) => {
-          return <a className="text-stone-400 font-bold mt-10 p-3 ">{item}</a>;
-        })}
-      </div>
-      <div className="flex flex-col items-end justify-end">
-        <div>
-          <button className="text-white m-2 border border-amber-500 rounded p-2">
-            Sign in
-          </button>
-          <button className="text-white m-2 font-bold bg-linear-to-r from-orange-400 to-orange-600 rounded p-2">
-            Register
-          </button>
-          <button className="text-white m-2 font-bold border border-white rounded p-2">
-            QR
-          </button>
-        </div>
-        <div className="px-2">
-          <button className="flex p-2 text-white font-semibold rounded border-b border-b-white">
-            White Paper <BsArrowDown className="m-1" />
-          </button>
-        </div>
-      </div>
-    </section>
+
+      <div></div>
+    </nev>
   );
 };
 
