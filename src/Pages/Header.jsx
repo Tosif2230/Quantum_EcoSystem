@@ -10,25 +10,25 @@ const Header = () => {
     "Company",
   ];
   return (
-    <nev className="flex flex-col border-amber-50 border">
-      <div className="flex justify-between">
-        <img src="/logo.png" alt="logo" className="h-42 w-auto px-2" />
+    <nav className="flex">
+      <div className="flex justify-between w-full">
+        <img src="/logo.png" alt="logo" className="h-38 w-auto" />
         <div className="flex mt-10">
-          {ListItems.map((item) => {
+          {ListItems.map((item, index) => {
             return (
-              <a className="text-stone-400 font-semibold text-[18px] p-5">
+              <a key={index} className="text-stone-400 font-raleway font-bold text-[16px] p-4">
                 {item}
               </a>
             );
           })}
         </div>
-        <div className="flex flex-col justify-center px-6  mt-4">
+        <div className="flex flex-col justify-center px-6 mt-4">
           <div className="flex flex-row gap-2 mt-8 px-2">
             <div className="flex flex-row gap-2">
-              <button className="text-white px-3 font-semibold  border border-amber-500 rounded">
+              <button className="text-white px-3 font-bold font-raleway border border-transparent [background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,rgba(240,189,57,1),rgba(178,94,22,1),rgba(198,41,41,1))_border-box] rounded">
                 Sign in
               </button>
-              <button className="text-white px-3 m-0 font-semibold bg-linear-to-r from-orange-400 to-orange-600 rounded">
+              <button className="text-white px-3 font-bold font-raleway bg-linear-to-r from-[rgba(240,189,57,1)]  to-[rgba(198,41,41,1)] rounded">
                 Register
               </button>
             </div>
@@ -47,7 +47,7 @@ const Header = () => {
       </div>
 
       <div></div>
-    </nev>
+    </nav>
   );
 };
 

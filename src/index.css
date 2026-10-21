@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  --font-lato: "Lato", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-lato);
+  color: white;
+}
+
+.container {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 0px 20px;
+}

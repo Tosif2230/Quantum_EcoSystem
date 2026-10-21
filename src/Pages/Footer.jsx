@@ -70,28 +70,39 @@ const Footer = () => {
   ];
   return (
     <section>
-      <div className="flex justify-between items-center p-3 px-40 py-5">
+      <div className="flex justify-between px-50 py-10">
         <div className="flex flex-col justify-center items-center">
           <img
             src="./src//assets/FooterLogo.png"
             alt="FooterLogo"
-            className="py-5"
+            className="py-6 h-30"
           />
           <div className="flex flex-col">
             <h1 className="text-[rgba(135,135,135,1)] capitalize text-center text-[12px] py-2 mt-10">
               Mobile App
             </h1>
-            <img src="./src/assets/QR.png" alt="QR"  className="" />
-            <img src="./src/assets/apple_store.png" alt="Apple Play" className="mt-1" />
-            <img src="./src/assets/play_store.png" alt="Google Play" className="mt-2" />
+            <img src="./src/assets/QR.png" alt="QR" className="" />
+            <img
+              src="./src/assets/apple_store.png"
+              alt="Apple Play"
+              className="mt-3"
+            />
+            <img
+              src="./src/assets/play_store.png"
+              alt="Google Play"
+              className="mt-3"
+            />
           </div>
         </div>
-        <div className="flex gap-6 py-2">
+        <div className="flex gap-10 py-8">
           <div className="flex flex-col">
-            <h1 className="text-white font-medium text-[15px] mb-2">Products</h1>
-            {Products.map((list) => {
+            <h1 className="font-raleway text-[18px] font-semibold mb-2">
+              Products
+            </h1>
+            {Products.map((list, index) => {
               return (
                 <a
+                  key={index}
                   href="#"
                   className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5"
                 >
@@ -101,10 +112,13 @@ const Footer = () => {
             })}
           </div>
           <div className="flex flex-col">
-            <h1 className="text-white font-medium text-[15px] mb-2">Company</h1>
-            {Company.map((list) => {
+            <h1 className="font-raleway text-[18px] font-semibold mb-2">
+              Company
+            </h1>
+            {Company.map((list, index) => {
               return (
                 <a
+                  key={index}
                   href="#"
                   className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5"
                 >
@@ -114,10 +128,13 @@ const Footer = () => {
             })}
           </div>
           <div className="flex flex-col">
-            <h1 className="text-white font-medium text-[15px] mb-2">Resources</h1>
-            {Resources.map((list) => {
+            <h1 className="font-raleway text-[18px] font-semibold mb-2">
+              Resources
+            </h1>
+            {Resources.map((list, index) => {
               return (
                 <a
+                  key={index}
                   href="#"
                   className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5 "
                 >
@@ -126,44 +143,50 @@ const Footer = () => {
               );
             })}
           </div>
-          <div className="flex flex-col">
-            <h1 className="text-white font-medium text-[15px] mb-2">Legal</h1>
-            {Legal.map((list) => {
+          <div className="flex flex-col font-lato">
+            <h1 className="font-raleway text-[18px] font-semibold mb-2">
+              Legal
+            </h1>
+            {Legal.map((list, index) => {
               return (
-                <a
-                  href="#"
-                  className="flex flex-col text-[rgba(135,135,135,1)] w-30  py-0.5"
-                >
-                  {list}
-                </a>
+                <ul key={index}>
+                  <li>
+                    <a
+                      href="#"
+                      className="flex flex-col text-[rgba(135,135,135,1)] w-35 py-0.5"
+                    >
+                      {list}
+                    </a>
+                  </li>
+                </ul>
               );
             })}
           </div>
         </div>
       </div>
       <div>
-        <div className="flex justify-between items-center p-3 px-40 border border-t-gray-700">
-          <h1 className="text-[rgba(135,135,135,1)] capitalize">
+        <div className="flex justify-between items-center p-3 px-50 border-t border-gray-600">
+          <h1 className="text-[rgba(135,135,135,1)] font-lato font-normal capitalize">
             Sign in for the latest updates
           </h1>
-          <div className="flex gap-2 px-4">
+          <div className="flex gap-2 py-2">
             <input
-              className="placeholder-[rgba(135,135,135,1)] border border-gray-600 rounded-l p-2 text-xl w-100"
+              className="placeholder-[rgba(135,135,135,1)] border border-gray-600 rounded-lg p-2 font-lato text-[16px] w-70"
               type="email"
               placeholder="Enter your email"
             />
-            <button className="text-white w-[20%] text-xl font-semibold bg-linear-to-r from-orange-400 to-orange-600 rounded">
+            <button className=" w-[28%] font-raleway text-[16px] font-semibold bg-linear-to-r from-orange-400 to-orange-600 rounded">
               Sign in
             </button>
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center p-3 px-40 border border-t-gray-700">
-        <h1 className="text-sm text-[rgba(78,78,78,1)] capitalize">{`${new Date().getFullYear()} Quantum ecosystem. all rights reserved`}</h1>
-        <div className="flex gap-8 m-4">
+      <div className="flex justify-between items-center p-3 px-50 border-t border-gray-600">
+        <h1 className="font-lato font-normal text-[16px] text-[rgba(78,78,78,1)] capitalize">{`${new Date().getFullYear()} Quantum ecosystem. all rights reserved`}</h1>
+        <div className="flex gap-8 py-4">
           {socialIcons.map((item, index) => {
             return (
-              <a key={index} href={item.link} className="text-white">
+              <a key={index} href={item.link} className="">
                 <img src={item.icon} alt={item.alt} />
               </a>
             );
