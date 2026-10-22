@@ -1,6 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
-  const ListItems = [
+const ListItems = [
     "Market",
     "Product",
     "Corporates",
@@ -10,13 +10,16 @@ const Header = () => {
     "Company",
   ];
   return (
-    <nav className="flex">
-      <div className="flex justify-between w-full">
-        <img src="/logo.png" alt="logo" className="h-38 w-auto" />
+    <header className="w-full">
+      <nav className="flex justify-between w-full">
+        <img src="/logo.png" alt="logo" className="h-38 w-auto " />
         <div className="flex mt-10">
           {ListItems.map((item, index) => {
             return (
-              <a key={index} className="text-stone-400 font-raleway font-bold text-[16px] p-4">
+              <a
+                key={index}
+                className="text-stone-400 font-raleway font-bold text-[16px] p-4"
+              >
                 {item}
               </a>
             );
@@ -44,10 +47,8 @@ const Header = () => {
             </button>
           </div>
         </div>
-      </div>
-
-      <div></div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
