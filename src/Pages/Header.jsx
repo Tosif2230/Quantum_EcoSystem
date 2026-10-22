@@ -1,3 +1,5 @@
+import Logo from "/logo.png";
+import Scanner from "../assets/scanner.png"
 import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
 const ListItems = [
@@ -12,7 +14,7 @@ const ListItems = [
   return (
     <header className="w-full">
       <nav className="flex justify-between w-full">
-        <img src="/logo.png" alt="logo" className="h-38 w-auto " />
+        <img src={Logo} alt="logo" className="h-38 w-auto " />
         <div className="flex mt-10">
           {ListItems.map((item, index) => {
             return (
@@ -36,7 +38,7 @@ const ListItems = [
               </button>
             </div>
             <img
-              src="./src/assets/scanner.png"
+              src={Scanner}
               alt="scanner"
               className="size-10"
             />
