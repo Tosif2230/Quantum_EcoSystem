@@ -1,3 +1,17 @@
+import PS1 from "../assets/Partner_Img/ps_1.png";
+import PS2 from "../assets/Partner_Img/ps_2.png";
+import PS3 from "../assets/Partner_Img/ps_3.png";
+import PS4 from "../assets/Partner_Img/ps_4.png";
+import PS5 from "../assets/Partner_Img/ps_5.png";
+import PS6 from "../assets/Partner_Img/ps_6.png";
+import PS7 from "../assets/Partner_Img/ps_7.png";
+
+import Award1 from "../assets/Partner_Img/award_1.png";
+import Award2 from "../assets/Partner_Img/award_2.png";
+import Award3 from "../assets/Partner_Img/award_3.png";
+
+import Partner from "../assets/Partner_Img/Group_11.jpg";
+
 import { MdArrowOutward } from "react-icons/md";
 
 const Partners = () => {
@@ -8,15 +22,15 @@ const Partners = () => {
           <h1 className="text-[50px] text-center">Cooperative Partners</h1>
           <div className="m-auto w-[65%]">
             <div className="flex justify-start gap-10 items-center">
-              <img src="src\assets\Partner_Img\ps_1.png" alt="" />
-              <img src="src\assets\Partner_Img\ps_2.png" alt="" />
-              <img src="src\assets\Partner_Img\ps_3.png" alt="" />
-              <img src="src\assets\Partner_Img\ps_4.png" alt="" />
+              <img src={PS1} alt="" />
+              <img src={PS2} alt="" />
+              <img src={PS3} alt="" />
+              <img src={PS4} alt="" />
             </div>
             <div className="flex justify-end gap-10 items-center">
-              <img src="src\assets\Partner_Img\ps_5.png" alt="" />
-              <img src="src\assets\Partner_Img\ps_6.png" alt="" />
-              <img src="src\assets\Partner_Img\ps_7.png" alt="" />
+              <img src={PS5} alt="" />
+              <img src={PS6} alt="" />
+              <img src={PS7} alt="" />
             </div>
           </div>
           <div className="flex justify-center items-end gap-20 py-20 mt-10">
@@ -31,15 +45,15 @@ const Partners = () => {
               </p>
             </div>
             <div className="flex h-40 gap-2">
-              <img src="src\assets\Partner_Img\award_1.png" alt="award 1" />
-              <img src="src\assets\Partner_Img\award_2.png" alt="award 2" />
-              <img src="src\assets\Partner_Img\award_3.png" alt="award 3" />
+              <img src={Award1} alt="award 1" />
+              <img src={Award2} alt="award 2" />
+              <img src={Award3} alt="award 3" />
             </div>
           </div>
           <div className="flex justify-center">
             <div className="relative">
               <img
-                src="src\assets\Partner_Img\Group_11.jpg"
+                src={Partner}
                 alt="Partner"
                 className="rounded-3xl "
               />

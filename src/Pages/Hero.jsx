@@ -1,4 +1,6 @@
+import Group from "../assets/Hero/Group.png"
 import { MdArrowOutward } from "react-icons/md";
+
 
 function Hero() {
   return (
@@ -29,7 +31,7 @@ function Hero() {
           </div>
         </div>
         <img
-          src="/Group.png"
+          src={Group}
           alt="Group"
           className="h-50 w-80 mt-20 border-amber-50"
         />

@@ -1,3 +1,5 @@
+import Illustration from "../assets/Refer/Illustration.png";
+import Group from "../assets/Refer/Group.png";
 import { MdArrowOutward } from "react-icons/md";
 
 const Refer = () => {
@@ -23,7 +25,7 @@ const Refer = () => {
             </div>
             <div className="flex justify-end">
               <img
-                src="./src/assets/Refer/Illustration.png"
+                src={Illustration}
                 alt="Group"
                 className="h-40 w-40"
               />
@@ -50,7 +52,7 @@ const Refer = () => {
             </div>
             <div className="flex justify-center">
               <img
-                src="./src/assets/Refer/Group.png"
+                src={Group}
                 alt="Group"
                 className="flex justify-end items-end"
               />

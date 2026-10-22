@@ -1,7 +1,12 @@
-import LinkedIn from "../assets/linkedin.png";
-import Twitter from "../assets/twitter.png";
-import Facebook from "../assets/facebook.png";
-import Discord from "../assets/discord.png";
+import LinkedIn from "../assets/Footer/linkedin.png";
+import Twitter from "../assets/Footer/twitter.png";
+import Facebook from "../assets/Footer/facebook.png";
+import Discord from "../assets/Footer/discord.png";
+import FooterLogo from "../assets/Footer/FooterLogo.png";
+import QRImage from "../assets/Footer/QR.png";
+import ApplePay from "../assets/Footer/apple_store.png";
+import GooglePay from "../assets/Footer/play_store.png";
+
 
 const Footer = () => {
   const Products = [
@@ -73,7 +78,7 @@ const Footer = () => {
       <div className="flex justify-between px-50 py-10">
         <div className="flex flex-col justify-center items-center">
           <img
-            src="./src//assets/FooterLogo.png"
+            src={FooterLogo}
             alt="FooterLogo"
             className="py-6 h-30"
           />
@@ -81,14 +86,14 @@ const Footer = () => {
             <h1 className="text-[rgba(135,135,135,1)] capitalize text-center text-[12px] py-2 mt-10">
               Mobile App
             </h1>
-            <img src="./src/assets/QR.png" alt="QR" className="" />
+            <img src={QRImage} alt="QR" className="" />
             <img
-              src="./src/assets/apple_store.png"
+              src={ApplePay}
               alt="Apple Play"
               className="mt-3"
             />
             <img
-              src="./src/assets/play_store.png"
+              src={GooglePay}
               alt="Google Play"
               className="mt-3"
             />

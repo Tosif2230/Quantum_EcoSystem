@@ -1,10 +1,12 @@
+import SecurityImage from "../assets/Security_Img/Group_1171275436.png";
 import { MdArrowOutward } from "react-icons/md";
+
 const Security = () => {
   return (
     <div className=" bg-[url(src/assets/Security_Img/Frame_59.jpg)] bg-cover bg-center">
       <div className=" relative max-w-200 m-auto py-25">
         <img
-          src="./src\assets\Security_Img\Group_1171275436.png"
+          src={SecurityImage}
           alt="Security Image"
           className=""
         />

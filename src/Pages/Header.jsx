@@ -1,5 +1,5 @@
-import Logo from "/logo.png";
-import Scanner from "../assets/scanner.png"
+import Logo from "../assets/Hero/logo.png";
+import Scanner from "../assets/Hero/scanner.png"
 import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
 const ListItems = [

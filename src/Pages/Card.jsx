@@ -1,3 +1,9 @@
+import CardImage from "../assets/Card/Group_Card1.jpg"
+import Crypto from "../assets/Card/GroupCry.png"
+import MasterCard from "../assets/Card/mastercard.png"
+import Visa from "../assets/Card/visa.png"
+import Apple from "../assets/Card/apple_pay.png"
+import Gpay from "../assets/Card/gpay.png"
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Card = () => {
@@ -7,7 +13,7 @@ const Card = () => {
       <div className="flex justify-center">
         <div className="relative">
           <img
-            src="src\assets\Card\Group_Card1.jpg"
+            src={CardImage}
             alt="Card"
             className="py-20"
           />
@@ -46,7 +52,7 @@ const Card = () => {
               <div className="">
                 <div className="flex flex-col items-end px-15">
                   <img
-                    src="./src/assets/Card/GroupCry.png"
+                    src={Crypto}
                     alt="Crypto"
                     className="w-45"
                   />
@@ -60,10 +66,10 @@ const Card = () => {
                     Pay With Different Currencies And With Different Modes
                   </h2>
                   <div className="flex mt-5 gap-6">
-                    <img src="./src/assets/mastercard.png" alt="MasterCard" />
-                    <img src="./src/assets/visa.png" alt="Visa" />
-                    <img src="./src/assets/apple_pay.png" alt="ApplePay" />
-                    <img src="src/assets/gpay.png" alt="Gpay" />
+                    <img src={MasterCard} alt="MasterCard" />
+                    <img src={Visa} alt="Visa" />
+                    <img src={Apple} alt="ApplePay" />
+                    <img src={Gpay} alt="Gpay" />
                   </div>
                 </div>
               </div>
