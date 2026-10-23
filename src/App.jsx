@@ -1,20 +1,12 @@
-import Header from "./Pages/Header";
-import Hero from "./Pages/Hero";
-import Card from "./Pages/Card";
-import Refer from "./Pages/Refer";
-import Security from "./Pages/Security";
-import Partners from "./Pages/Partners";
-import Footer from "./Pages/Footer";
+import Header from "./layout/Header.jsx";
+import { Outlet } from "react-router-dom";
+import Footer from "./layout/Footer.jsx";
 
 const App = () => {
   return (
-    <div >
+    <div>
       <Header />
-      <Hero /> 
-      <Card />
-      <Refer />
-      <Security />
-      <Partners />
+      <Outlet />
       <Footer />
     </div>
   );

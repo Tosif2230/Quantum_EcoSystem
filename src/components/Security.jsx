@@ -16,7 +16,7 @@ const Security = () => {
             Our proven real-time risk engine and strict collateralization
             requirements ensure we generate earnings in a safe way.
           </p>
-          <button className="flex relative top-5.5 justify-end items-center my-2 px-2 gap-3 font-raleway rounded-full border-3 border-[#e89f18]">
+          <button className="flex relative top-5.5 justify-end items-center cursor-pointer my-2 px-2 gap-3 font-raleway rounded-full border-3 border-[#e89f18]">
             Learn More
             <MdArrowOutward className="bg-[#e6ce46] rounded-full" />
           </button>
@@ -26,7 +26,7 @@ const Security = () => {
           <p className="mt-3 text-[16px]">
             All digital assets benefit from insurance from our custody partners such as Ledger Vault and Fireblocks.
           </p>
-          <button className="flex relative top-5.5 items-center my-2 px-2 w-34 gap-3 font-raleway rounded-full border-3 border-[#e89f18]">
+          <button className="flex relative top-5.5 items-center cursor-pointer my-2 px-2 w-34 gap-3 font-raleway rounded-full border-3 border-[#e89f18]">
             Learn More
             <MdArrowOutward className="bg-[#e6ce46] rounded-full" />
           </button>

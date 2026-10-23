@@ -18,17 +18,13 @@ const Refer = () => {
             </p>
 
             <div className="">
-              <button className="flex items-center gap-5 mt-8 font-raleway text-[14px] border border-amber-500 rounded-full px-3 capitalize">
+              <button className="flex items-center gap-5 mt-8 font-raleway text-[14px] cursor-pointer border border-amber-500 rounded-full px-3 capitalize">
                 start inviting
                 <MdArrowOutward className="bg-amber-600 rounded-full" />
               </button>
             </div>
             <div className="flex justify-end">
-              <img
-                src={Illustration}
-                alt="Group"
-                className="h-40 w-40"
-              />
+              <img src={Illustration} alt="Group" className="h-40 w-40" />
             </div>
           </div>
         </div>
@@ -45,7 +41,7 @@ const Refer = () => {
             </p>
 
             <div className="flex">
-              <button className="flex items-center gap-5 mt-4  font-raleway text-[14px] border border-amber-500 rounded-full px-3 capitalize">
+              <button className="flex items-center gap-5 mt-4  font-raleway text-[14px] cursor-pointer border border-amber-500 rounded-full px-3 capitalize">
                 become an affiliator
                 <MdArrowOutward className="bg-amber-600 rounded-full" />
               </button>

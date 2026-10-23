@@ -1,9 +1,9 @@
-import CardImage from "../assets/Card/Group_Card1.jpg"
-import Crypto from "../assets/Card/GroupCry.png"
-import MasterCard from "../assets/Card/mastercard.png"
-import Visa from "../assets/Card/visa.png"
-import Apple from "../assets/Card/apple_pay.png"
-import Gpay from "../assets/Card/gpay.png"
+import CardImage from "../assets/Card/Group_Card1.jpg";
+import Crypto from "../assets/Card/GroupCry.png";
+import MasterCard from "../assets/Card/mastercard.png";
+import Visa from "../assets/Card/visa.png";
+import Apple from "../assets/Card/apple_pay.png";
+import Gpay from "../assets/Card/gpay.png";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Card = () => {
@@ -12,18 +12,17 @@ const Card = () => {
     <section className="bg-[url(./src/assets/Card/frame_56.jpg)] bg-center bg-cover">
       <div className="flex justify-center">
         <div className="relative">
-          <img
-            src={CardImage}
-            alt="Card"
-            className="py-20"
-          />
+          <img src={CardImage} alt="Card" className="lg:py-20 rounded-2xl" />
           <div className="absolute flex flex-col justify-center items-center w-full top-30">
             <div className="flex gap-10 ">
-              {listItems.map((item,index) => {
+              {listItems.map((item, index) => {
                 return (
-                  <h2 key={index} className="border border-white rounded-full px-5 py-1 font-raleway text-[16px] cursor-pointer">
+                  <button
+                    key={index}
+                    className="border hover:border-b-2 hover:border-amber-300   rounded-full px-5 py-1 font-raleway text-[16px] cursor-pointer"
+                  >
                     {item}
-                  </h2>
+                  </button>
                 );
               })}
             </div>
@@ -38,11 +37,11 @@ const Card = () => {
                   transfer. Get up to 0.5% in crypto rewards on your purchase
                 </h2>
                 <div className="flex gap-4 pt-5">
-                  <button className="flex gap-5 justify-between items-center my-2 font-raleway text-[14px] bg-amber-500 rounded-full px-3">
+                  <button className="flex gap-5 justify-between items-center my-2 font-raleway cursor-pointer text-[14px] bg-amber-500 rounded-full px-3">
                     Buy Now
                     <BsArrowUpRightCircle className="text-xl bg-white text-amber-500 rounded-full" />
                   </button>
-                  <button className="flex gap-5 items-center my-2 py-1 font-raleway text-[14px] border border-amber-500 rounded-full px-3">
+                  <button className="flex gap-5 items-center my-2 py-1 font-raleway cursor-pointer text-[14px] border border-amber-500 rounded-full px-3">
                     Learn More
                     <BsArrowUpRightCircle className="text-xl bg-amber-500  rounded-full" />
                   </button>
@@ -51,11 +50,7 @@ const Card = () => {
 
               <div className="">
                 <div className="flex flex-col items-end px-15">
-                  <img
-                    src={Crypto}
-                    alt="Crypto"
-                    className="w-45"
-                  />
+                  <img src={Crypto} alt="Crypto" className="w-45" />
                   <h1 className="font-lato text-[24px] text-amber-500">
                     Upto 0.5%
                   </h1>

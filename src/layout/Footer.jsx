@@ -1,4 +1,4 @@
-import LinkedIn from "../assets/Footer/linkedin.png";
+import LinkedIn from "../assets/Footer/LinkedIn.png";
 import Twitter from "../assets/Footer/twitter.png";
 import Facebook from "../assets/Footer/facebook.png";
 import Discord from "../assets/Footer/discord.png";
@@ -6,7 +6,6 @@ import FooterLogo from "../assets/Footer/FooterLogo.png";
 import QRImage from "../assets/Footer/QR.png";
 import ApplePay from "../assets/Footer/apple_store.png";
 import GooglePay from "../assets/Footer/play_store.png";
-
 
 const Footer = () => {
   const Products = [
@@ -74,29 +73,23 @@ const Footer = () => {
     },
   ];
   return (
-    <section>
+    <section className="bg-[rgba(13,13,13,1)]">
       <div className="flex justify-between px-50 py-10">
         <div className="flex flex-col justify-center items-center">
-          <img
-            src={FooterLogo}
-            alt="FooterLogo"
-            className="py-6 h-30"
-          />
+          <a href="/" className="cursor-pointer">
+            <img src={FooterLogo} alt="FooterLogo" className="py-6 h-30" />
+          </a>
           <div className="flex flex-col">
             <h1 className="text-[rgba(135,135,135,1)] capitalize text-center text-[12px] py-2 mt-10">
               Mobile App
             </h1>
             <img src={QRImage} alt="QR" className="" />
-            <img
-              src={ApplePay}
-              alt="Apple Play"
-              className="mt-3"
-            />
-            <img
-              src={GooglePay}
-              alt="Google Play"
-              className="mt-3"
-            />
+            <button href="#" className="cursor-pointer">
+              <img src={ApplePay} alt="Apple Play" className="mt-3" />
+            </button>
+            <button href="#" className="cursor-pointer">
+              <img src={GooglePay} alt="Google Play" className="mt-3" />
+            </button>
           </div>
         </div>
         <div className="flex gap-10 py-8">
@@ -109,7 +102,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href="#"
-                  className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5"
+                  className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5 hover:underline"
                 >
                   {list}
                 </a>
@@ -125,7 +118,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href="#"
-                  className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5"
+                  className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5 hover:underline"
                 >
                   {list}
                 </a>
@@ -141,7 +134,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href="#"
-                  className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5 "
+                  className="flex flex-col text-[rgba(135,135,135,1)] w-25 py-0.5 hover:underline"
                 >
                   {list}
                 </a>
@@ -158,7 +151,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="#"
-                      className="flex flex-col text-[rgba(135,135,135,1)] w-35 py-0.5"
+                      className="flex flex-col text-[rgba(135,135,135,1)] w-35 py-0.5 hover:underline"
                     >
                       {list}
                     </a>
@@ -180,7 +173,7 @@ const Footer = () => {
               type="email"
               placeholder="Enter your email"
             />
-            <button className=" w-[28%] font-raleway text-[16px] font-semibold bg-linear-to-r from-orange-400 to-orange-600 rounded">
+            <button className=" w-[28%] font-raleway text-[16px] cursor-pointer font-semibold bg-linear-to-r from-orange-400 to-orange-600 rounded">
               Sign in
             </button>
           </div>

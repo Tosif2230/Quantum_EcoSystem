@@ -70,7 +70,7 @@ const Partners = () => {
                     Earn interest on your digital assets, borrow against them,
                     and exchange crypto with zero fees on the highly-rated app.
                   </p>
-                  <button className="flex items-center text-[20px] my-5 py-1 gap-10 w-50 font-raleway bg-linear-to-r from-[rgba(240,189,57,1)] via-[rgba(178,94,22,1)] to-[rgba(198,41,41,1)] rounded-full px-3">
+                  <button className="flex items-center text-[20px] cursor-pointer my-5 py-1 gap-10 w-50 font-raleway bg-linear-to-r from-[rgba(240,189,57,1)] via-[rgba(178,94,22,1)] to-[rgba(198,41,41,1)] rounded-full px-3">
                     Get Started
                     <MdArrowOutward className="bg-white rounded-full text-amber-950" />
                   </button>
