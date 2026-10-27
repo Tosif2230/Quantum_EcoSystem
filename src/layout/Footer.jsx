@@ -1,4 +1,4 @@
-import LinkedIn from "../assets/Footer/LinkedIn.png";
+import LinkedIn from "../assets/Footer/linkedin.png";
 import Twitter from "../assets/Footer/twitter.png";
 import Facebook from "../assets/Footer/facebook.png";
 import Discord from "../assets/Footer/discord.png";
