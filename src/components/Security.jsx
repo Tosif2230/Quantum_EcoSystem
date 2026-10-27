@@ -3,35 +3,55 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Security = () => {
   return (
-    <div className=" bg-[url(src/assets/Security_Img/Frame_59.jpg)] bg-cover bg-center">
-      <div className=" relative max-w-200 m-auto py-25">
+    <div className="relative bg-[url(src/assets/Security_Img/Frame_59.jpg)] bg-cover bg-center">
+      <div className="flex justify-center items-center md:py-16 lg:py-20 lg:px-8 xl:py-25 xl:px-0 p-5">
         <img
           src={SecurityImage}
           alt="Security Image"
-          className=""
+          className="w-[80%] h-auto"
         />
-        <div className="flex flex-col right-0 absolute w-90 items-end text-end top-22.25 ">
-          <h2 className="text-[24px] ">Sustainable Mode</h2>
-          <p className="mt-3 text-[16px]">
+      </div>
+      <div
+          className="absolute flex flex-col items-end text-end top-4 right-12 w-[30%]
+          md:top-15 md:right-25 md:w-[30%]
+          lg:top-24 lg:right-35 lg:w-[34%]"
+        >
+          <h2 className="text-[8px] md:text-[16px] lg:text-[30px] font-raleway font-bold">
+            Sustainable Mode
+          </h2>
+
+          <p className="py-1 md:py-3 lg:py-8 text-[5px] md:text-[12px] lg:text-[18px]">
             Our proven real-time risk engine and strict collateralization
             requirements ensure we generate earnings in a safe way.
           </p>
-          <button className="flex relative top-5.5 justify-end items-center cursor-pointer my-2 px-2 gap-3 font-raleway rounded-full border-3 border-[#e89f18]">
+
+          <button className="relative top-0 md:top-1 px-1 md:px-2 text-[7px] md:text-[13px] lg:text-[20px] flex items-center font-raleway font-bold justify-end gap-2 md:gap-3 rounded-full border-2 xl:border-3 border-[#e89f18]">
             Learn More
-            <MdArrowOutward className="bg-[#e6ce46] rounded-full" />
+            <div className="rounded-full bg-[#e6ce46]">
+              <MdArrowOutward />
+            </div>
           </button>
         </div>
-        <div className="flex flex-col absolute w-90  text-start bottom-16">
-          <h2 className="text-[24px] ">Custodial Insurance</h2>
-          <p className="mt-3 text-[16px]">
-            All digital assets benefit from insurance from our custody partners such as Ledger Vault and Fireblocks.
+
+        <div
+          className="absolute flex flex-col items-start text-start
+          bottom-1 left-12 w-[30%] md:bottom-8 md:left-25 md:w-[30%]
+          lg:bottom-14 lg:left-35 lg:w-[34%]"
+        >
+          <h2 className="text-[8px] md:text-[16px] lg:text-[30px] font-raleway font-bold">
+            Custodial Insurance
+          </h2>
+          <p className="py-1 md:py-3 lg:py-8 text-[5px] md:text-[12px] lg:text-[18px]">
+            All digital assets benefit from insurance from our custody partners
+            such as Ledger Vault and Fireblocks.
           </p>
-          <button className="flex relative top-5.5 items-center cursor-pointer my-2 px-2 w-34 gap-3 font-raleway rounded-full border-3 border-[#e89f18]">
+          <button className="relative top-0 md:top-1 px-1 md:px-2 text-[7px] md:text-[13px] lg:text-[20px] flex items-center font-raleway font-bold justify-end gap-2 md:gap-3 rounded-full border-2 xl:border-3 border-[#e89f18]">
             Learn More
-            <MdArrowOutward className="bg-[#e6ce46] rounded-full" />
+            <div className="rounded-full bg-[#e6ce46]">
+              <MdArrowOutward />
+            </div>
           </button>
         </div>
-      </div>
     </div>
   );
 };

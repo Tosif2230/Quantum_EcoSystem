@@ -16,35 +16,37 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Partners = () => {
   return (
-    <div className="bg-[url(src/assets/Partner_Img/Frame64.jpg)] bg-cover bg-center ">
-      <div className="relative flex flex-col py-10">
+    <div className="bg-[url(src/assets/Partner_Img/Frame64.jpg)] bg-cover bg-center p-5">
+      <div className="relative flex flex-col lg:py-10">
         <div className="flex flex-col">
-          <h1 className="text-[50px] text-center">Cooperative Partners</h1>
-          <div className="m-auto w-[65%]">
-            <div className="flex justify-start gap-10 items-center">
-              <img src={PS1} alt="" />
-              <img src={PS2} alt="" />
-              <img src={PS3} alt="" />
-              <img src={PS4} alt="" />
+          <h1 className="text-[25px] font-raleway font-bold lg:text-[50px] text-center">
+            Cooperative Partners
+          </h1>
+          <div className="m-auto lg:w-[73%] ">
+            <div className="flex justify-start gap-3  md:gap-10 items-center">
+              <img src={PS1} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img src={PS2} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img src={PS3} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img src={PS4} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
             </div>
             <div className="flex justify-end gap-10 items-center">
-              <img src={PS5} alt="" />
-              <img src={PS6} alt="" />
-              <img src={PS7} alt="" />
+              <img src={PS5} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img src={PS6} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img src={PS7} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
             </div>
           </div>
-          <div className="flex justify-center items-end gap-20 py-20 mt-10">
-            <div className="flex flex-col w-[30%]">
-              <h2 className="text-[34px] font-raleway">
+          <div className="flex flex-col md:flex-row justify-center items-start md:items-end lg:gap-20 py-5 md:py-10">
+            <div className="flex flex-col lg:w-[30%] md:w-[63%] p-2">
+              <h2 className="text-[20px] md:text-[25px] lg:text-[34px] font-raleway font-bold w-60 md:w-90 lg:w-full">
                 Trusted, Award-Winning Digital Asset Platform
               </h2>
-              <p className="text-[16px] w-[80%] py-5">
+              <p className="text-[11px] lg:text-[16px] w-[80%] py-2 lg:py-5 ">
                 See all prestigious awards recognizing Nexo's cutting-edge
                 technology, ease of use, and overall mission to serve as a
                 bridge between traditional and digital finance.
               </p>
             </div>
-            <div className="flex h-40 gap-2">
+            <div className="flex h-20 lg:h-40 gap-2 px-2">
               <img src={Award1} alt="award 1" />
               <img src={Award2} alt="award 2" />
               <img src={Award3} alt="award 3" />
@@ -52,28 +54,28 @@ const Partners = () => {
           </div>
           <div className="flex justify-center">
             <div className="relative">
-              <img
-                src={Partner}
-                alt="Partner"
-                className="rounded-3xl "
-              />
-              <div className="absolute top-1 w-full px-10 py-2">
-                <h2 className="capitalize text-[rgba(178,94,22,1)] font-raleway text-[48px]">
+              <img src={Partner} alt="Partner" className="rounded-3xl p-2" />
+              <div className="absolute top-1 w-full px-4 py-2 md:px-8 lg:px-10 md:py-2">
+                <h2 className="capitalize text-[rgba(178,94,22,1)] font-raleway lg:text-[48px] md:text-[40px]">
                   join the community
                 </h2>
 
-                <h2 className="flex justify-end capitalize font-raleway text-[48px] leading-[100%] ">
+                <h2 className="flex justify-end capitalize font-raleway lg:text-[48px] md:text-[40px] leading-3 md:leading-7 lg:leading-12 ">
                   and grow your portfolio
                 </h2>
-                <div className="flex flex-col w-[50%] mt-25">
-                  <p className="text-[rgba(178,94,22,1)] w-[75%] text-[14px]">
+                <div className="flex flex-col w-[50%] mt-2 md:mt-18 lg:mt-25">
+                  <p className="text-[rgba(178,94,22,1)] md:w-[80%] text-[6.5px] md:text-[15px] lg:text-[18px]">
                     Earn interest on your digital assets, borrow against them,
                     and exchange crypto with zero fees on the highly-rated app.
                   </p>
-                  <button className="flex items-center text-[20px] cursor-pointer my-5 py-1 gap-10 w-50 font-raleway bg-linear-to-r from-[rgba(240,189,57,1)] via-[rgba(178,94,22,1)] to-[rgba(198,41,41,1)] rounded-full px-3">
-                    Get Started
-                    <MdArrowOutward className="bg-white rounded-full text-amber-950" />
-                  </button>
+                  <div>
+                    <button className="flex items-center px-1 md:px-2 lg:px-3 md:my-2 text-[10px] md:text-[15px] lg:text-[20px] cursor-pointer my-1 lg:my-5 gap-2 lg:gap-10 lg:w-50 font-raleway bg-linear-to-r from-[rgba(240,189,57,1)] via-[rgba(178,94,22,1)] to-[rgba(198,41,41,1)] rounded-full">
+                      Get Started
+                      <div className="bg-white rounded-full text-amber-950">
+                        <MdArrowOutward />
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

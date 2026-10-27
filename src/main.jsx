@@ -2,10 +2,10 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import Market from "./Pages/Market.jsx";
 import Hero from "./components/Hero.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Register from "./Pages/Register.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -14,13 +14,13 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero  />,
-      },
-      {
-        path: "/market",
-        element: <Market />,
+        element: <Hero />,
       },
     ],
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 
