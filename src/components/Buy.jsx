@@ -8,7 +8,7 @@ import MasterCard from "../assets/Card/mastercard.png";
 import Visa from "../assets/Card/visa.png";
 import Apple from "../assets/Card/apple_pay.png";
 import Gpay from "../assets/Card/gpay.png";
-import CardBackground from "../assets/Card/frame_56.jpg";
+import CardBackground from "../assets/Card/Frame_56.jpg";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { useState } from "react";
 
