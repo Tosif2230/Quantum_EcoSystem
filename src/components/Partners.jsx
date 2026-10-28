@@ -9,14 +9,17 @@ import PS7 from "../assets/Partner_Img/ps_7.png";
 import Award1 from "../assets/Partner_Img/award_1.png";
 import Award2 from "../assets/Partner_Img/award_2.png";
 import Award3 from "../assets/Partner_Img/award_3.png";
-
+import PartnerBg from "../assets/Partner_Img/Frame64.jpg";
 import Partner from "../assets/Partner_Img/Group_11.jpg";
 
 import { MdArrowOutward } from "react-icons/md";
 
 const Partners = () => {
   return (
-    <div className="bg-[url(./src/assets/Partner_Img/Frame64.jpg)] bg-cover bg-center p-5">
+    <div
+      className="bg-cover bg-center p-5"
+      style={{ background: `url(${PartnerBg})` }}
+    >
       <div className="relative flex flex-col lg:py-10">
         <div className="flex flex-col">
           <h1 className="text-[25px] font-raleway font-bold lg:text-[50px] text-center">
@@ -24,15 +27,43 @@ const Partners = () => {
           </h1>
           <div className="m-auto lg:w-[73%] ">
             <div className="flex justify-start gap-3  md:gap-10 items-center">
-              <img src={PS1} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
-              <img src={PS2} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
-              <img src={PS3} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
-              <img src={PS4} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img
+                src={PS1}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
+              <img
+                src={PS2}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
+              <img
+                src={PS3}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
+              <img
+                src={PS4}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
             </div>
             <div className="flex justify-end gap-10 items-center">
-              <img src={PS5} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
-              <img src={PS6} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
-              <img src={PS7} alt="" className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40" />
+              <img
+                src={PS5}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
+              <img
+                src={PS6}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
+              <img
+                src={PS7}
+                alt=""
+                className="h-10 w-15 md:h-15 md:w-30 lg:h-20 lg:w-40"
+              />
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-start md:items-end lg:gap-20 py-5 md:py-10">

@@ -1,10 +1,14 @@
 import Illustration from "../assets/Refer/Illustration.png";
 import Group from "../assets/Refer/Group.png";
+import ReferBackground from "../assets/Refer/Backgroung.jpg";
 import { MdArrowOutward } from "react-icons/md";
 
 const Refer = () => {
   return (
-    <section className="bg-[url(./src/assets/Refer/Backgroung.jpg)] bg-cover bg-center p-5">
+    <section
+      className="bg-cover bg-center p-5"
+      style={{ background: `url(${ReferBackground})` }}
+    >
       <div className="flex flex-col md:flex-row md:justify-center px-5 w-full gap-5 md:gap-x-10 lg:gap-x-45 md:p-5">
         {/* Left Section of this page */}
         <div className="flex flex-col lg:w-[30%] md:w-[45%]">

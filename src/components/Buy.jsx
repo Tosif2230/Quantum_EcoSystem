@@ -8,6 +8,7 @@ import MasterCard from "../assets/Card/mastercard.png";
 import Visa from "../assets/Card/visa.png";
 import Apple from "../assets/Card/apple_pay.png";
 import Gpay from "../assets/Card/gpay.png";
+import CardBackground from "../assets/Card/frame_56.jpg";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { useState } from "react";
 
@@ -54,11 +55,14 @@ const Buy = () => {
   const selectedCard = listItems.find((item) => item.Title === activeCard);
 
   return (
-    <section className="bg-[url(./src/assets/Card/frame_56.jpg)] bg-center bg-cover p-5">
+    <section
+      className="bg-center bg-cover p-5"
+      style={{ background: `url(${CardBackground})` }}
+    >
       <div className="flex justify-center items-center p-5">
         <div className="relative">
           {selectedCard && (
-            <div className="">
+            <div>
               <img
                 src={selectedCard.CardImage}
                 alt="Card"
@@ -83,7 +87,7 @@ const Buy = () => {
               })}
             </div>
 
-            <div className="flex border">
+            <div className="flex mt-20">
               <div className="flex flex-col justify-center">
                 <h2 className="font-raleway font-bold text-[8px] md:text-[25px] lg:text-[32px] tracking-[1px] w-50 lg:w-80">
                   {selectedCard.Discription}

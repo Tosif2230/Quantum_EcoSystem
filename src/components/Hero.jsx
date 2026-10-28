@@ -1,5 +1,6 @@
-import Group from "../assets/Hero/Group.png";
 import { MdArrowOutward } from "react-icons/md";
+import Group from "../assets/Hero/Group.png";
+import HeroBackground from "../assets/Hero/HeroBG.jpg";
 import Buy from "./Buy.jsx";
 import Refer from "./Refer";
 import Security from "./Security";
@@ -8,7 +9,10 @@ import Partners from "./Partners";
 function Hero() {
   return (
     <>
-      <section className={`flex flex-col items-center bg-[url(./src/assets/Hero/HeroBG.jpg)] lg:min-h-screen bg-center bg-cover p-5`}>
+      <section
+        className="flex flex-col items-center lg:min-h-screen bg-center bg-cover p-5"
+        style={{ background: `url(${HeroBackground})` }}
+      >
         <div className="">
           <div className="md:flex md:py-20">
             <div className="">
