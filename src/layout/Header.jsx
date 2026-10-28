@@ -21,8 +21,13 @@ const Header = () => {
   const closeMenu = () => setMenu(false);
   const navigate = useNavigate();
 
-  const hendleClick = () => {
-    navigate("/register");
+  // Login Function
+  const hendleLogin = () => {
+    navigate("/login");
+  };
+  // Register function
+  const hendleRegister = () => {
+    navigate("/signup");
   };
 
   return (
@@ -55,7 +60,7 @@ const Header = () => {
             <div className="flex flex-row gap-3 lg:text-sm">
               <button
                 type="button"
-                onClick={hendleClick}
+                onClick={hendleLogin}
                 className="hover:text-stone-300 xl:px-3 lg:px-2 cursor-pointer font-raleway font-bold border border-transparent
                 [background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,rgba(240,189,57,1),rgba(178,94,22,1),rgba(198,41,41,1))_border-box] rounded-lg"
               >
@@ -63,6 +68,8 @@ const Header = () => {
               </button>
 
               <button
+                type="button"
+                onClick={hendleRegister}
                 className="hover:text-stone-300 xl:px-3 lg:px-2 cursor-pointer font-raleway font-bold
                 bg-linear-to-r from-[rgba(240,189,57,1)] to-[rgba(198,41,41,1)] rounded-lg"
               >

@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Security = () => {
   return (
-    <div className="relative bg-[url(src/assets/Security_Img/Frame_59.jpg)] bg-cover bg-center">
+    <div className="relative bg-[url(./src/assets/Security_Img/Frame_59.jpg)] bg-cover bg-center">
       <div className="flex justify-center items-center md:py-16 lg:py-20 lg:px-8 xl:py-25 xl:px-0 p-5">
         <img
           src={SecurityImage}

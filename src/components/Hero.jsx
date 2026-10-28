@@ -8,7 +8,7 @@ import Partners from "./Partners";
 function Hero() {
   return (
     <>
-      <section className="flex flex-col  items-center bg-[url(src/assets/Hero/HeroBG.jpg)] lg:min-h-screen bg-center bg-cover p-5">
+      <section className={`flex flex-col items-center bg-[url(./src/assets/Hero/HeroBG.jpg)] lg:min-h-screen bg-center bg-cover p-5`}>
         <div className="">
           <div className="md:flex md:py-20">
             <div className="">
@@ -85,7 +85,7 @@ function Hero() {
         </div>
       </section>
 
-      {/* <Buy /> */}
+      <Buy />
       <Refer />
       <Security />
       <Partners />

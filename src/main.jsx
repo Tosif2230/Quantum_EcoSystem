@@ -5,24 +5,34 @@ import App from "./App.jsx";
 import Hero from "./components/Hero.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Register from "./Pages/Register.jsx";
+import SignUp from "./Pages/SignUp.jsx";
+import Login from "./Pages/Login.jsx";
+import Forgot from "./Pages/Forgot.jsx";
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Hero />,
-      },
-    ],
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-]);
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <Hero />,
+        },
+      ],
+    },
+    {
+      path: "/signup",
+      element: <SignUp />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/forgot",
+      element: <Forgot />,
+    },
+  ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

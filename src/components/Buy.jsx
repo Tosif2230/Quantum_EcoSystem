@@ -55,10 +55,10 @@ const Buy = () => {
 
   return (
     <section className="bg-[url(./src/assets/Card/frame_56.jpg)] bg-center bg-cover p-5">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center p-5">
         <div className="relative">
           {selectedCard && (
-            <div className="flex justify-center items-center">
+            <div className="">
               <img
                 src={selectedCard.CardImage}
                 alt="Card"
@@ -66,8 +66,8 @@ const Buy = () => {
               />
             </div>
           )}
-          <div className="absolute flex flex-col  top-2 lg:top-10">
-            <div className="flex gap-1 lg:gap-8 justify-center items-center border">
+          <div className="absolute flex flex-col top-4  lg:top-10 lg:right-1">
+            <div className="flex gap-1 lg:gap-8">
               {listItems.map((item, index) => {
                 return (
                   <button
@@ -75,7 +75,7 @@ const Buy = () => {
                     onClick={() => {
                       setActiveCard(item.Title);
                     }}
-                      className={`text-[5px] lg:text-[20px] border rounded-2xl px-1 lg:px-3 font-raleway cursor-pointer ${activeCard === item.Title ? "border-2 border-b-amber-400 border-transparent rounded-none" : ""}`}
+                    className={`text-[5px] lg:text-[20px] border rounded-2xl px-1 lg:px-3 font-raleway cursor-pointer ${activeCard === item.Title ? "border-2 border-b-amber-400 border-transparent rounded-none" : ""}`}
                   >
                     {item.Title}
                   </button>
@@ -83,22 +83,26 @@ const Buy = () => {
               })}
             </div>
 
-            <div className="flex xl:mt-15 gap-10">
+            <div className="flex border">
               <div className="flex flex-col justify-center">
-                <h2 className="font-raleway lg:text-[32px] tracking-[1px] w-80">
+                <h2 className="font-raleway font-bold text-[8px] md:text-[25px] lg:text-[32px] tracking-[1px] w-50 lg:w-80">
                   {selectedCard.Discription}
                 </h2>
-                <h2 className="font-lato text-[15px] w-100 tracking-[3px] pt-5">
+                <h2 className="text-[5px] lg:text-[15px] lg:w-100 tracking-[3px]">
                   {selectedCard.Paragraph}
                 </h2>
                 <div className="flex gap-4 pt-5">
-                  <button className="flex gap-5 justify-between items-center my-2 font-raleway cursor-pointer text-[14px] bg-amber-500 rounded-full px-3">
+                  <button className="flex justify-between items-center lg:gap-5 my-2 px-3 font-raleway cursor-pointer text-[14px] bg-amber-500 rounded-full">
                     Buy Now
-                    <BsArrowUpRightCircle className="text-xl bg-white text-amber-500 rounded-full" />
+                    <div className="text-xl bg-white text-amber-500 rounded-full">
+                      <BsArrowUpRightCircle />
+                    </div>
                   </button>
-                  <button className="flex gap-5 items-center my-2 py-1 font-raleway cursor-pointer text-[14px] border border-amber-500 rounded-full px-3">
+                  <button className="flex items-center my-2 py-1 gap-1 lg:gap-5 px-3 font-raleway cursor-pointer text-[5px] lg:text-[14px] border border-amber-500 rounded-full">
                     Learn More
-                    <BsArrowUpRightCircle className="text-xl bg-amber-500  rounded-full" />
+                    <div className="text-xl bg-amber-500  rounded-full">
+                      <BsArrowUpRightCircle />
+                    </div>
                   </button>
                 </div>
               </div>
@@ -115,7 +119,7 @@ const Buy = () => {
                   <h2 className="font-lato text-[14px]">
                     Pay With Different Currencies And With Different Modes
                   </h2>
-                  <div className="flex mt-5 gap-6">
+                  <div className="flex lg:mt-5 lg:gap-6">
                     <img src={MasterCard} alt="MasterCard" />
                     <img src={Visa} alt="Visa" />
                     <img src={Apple} alt="ApplePay" />

@@ -16,7 +16,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Partners = () => {
   return (
-    <div className="bg-[url(src/assets/Partner_Img/Frame64.jpg)] bg-cover bg-center p-5">
+    <div className="bg-[url(./src/assets/Partner_Img/Frame64.jpg)] bg-cover bg-center p-5">
       <div className="relative flex flex-col lg:py-10">
         <div className="flex flex-col">
           <h1 className="text-[25px] font-raleway font-bold lg:text-[50px] text-center">
