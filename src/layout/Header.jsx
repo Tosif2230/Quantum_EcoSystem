@@ -126,14 +126,14 @@ const Header = () => {
               <button
                 className="font-bold py-3 border border-transparent
                 [background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,rgba(240,189,57,1),rgba(178,94,22,1),rgba(198,41,41,1))_border-box] rounded hover:bg-stone-800"
-                onClick={closeMenu}
+                onClick={hendleLogin}
               >
                 Sign in
               </button>
 
               <button
                 className="font-bold py-3 rounded bg-linear-to-r from-[rgba(240,189,57,1)] to-[rgba(198,41,41,1)]"
-                onClick={closeMenu}
+                onClick={hendleRegister}
               >
                 Register
               </button>

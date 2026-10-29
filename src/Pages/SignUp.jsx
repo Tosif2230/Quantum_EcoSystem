@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/Hero/logo.png";
+import { RiArrowGoBackLine } from "react-icons/ri";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -8,6 +9,9 @@ const Signup = () => {
   };
   const handleLogin = () => {
     navigate("/login");
+  };
+  const backHome = () => {
+    navigate("/");
   };
   return (
     <div className="flex justify-center gap-50 bg-[rgba(13,13,13,1)] p-5 min-h-screen">
@@ -103,6 +107,16 @@ const Signup = () => {
             Creat Account
           </button>
         </div>
+        <button
+          type="button"
+          onClick={backHome}
+          className="hover:text-stone-300 w-full py-1 md:py-2 xl:px-3 lg:px-2 cursor-pointer font-raleway font-bold border border-transparent
+                          [background:linear-gradient(black,black)_padding-box,linear-gradient(to_right,rgba(240,189,57,1),rgba(178,94,22,1),rgba(198,41,41,1))_border-box] rounded-lg"
+        >
+          <span className="flex items-center justify-center gap-3">
+            Back to home <RiArrowGoBackLine />
+          </span>
+        </button>
       </div>
     </div>
   );

@@ -9,9 +9,9 @@ const Refer = () => {
       className="bg-cover bg-center p-5"
       style={{ background: `url(${ReferBackground})` }}
     >
-      <div className="flex flex-col md:flex-row md:justify-center px-5 w-full gap-5 md:gap-x-10 lg:gap-x-45 md:p-5">
+      <div className="flex flex-col md:flex-row md:justify-center px-5 w-full gap-5 md:gap-x-10 lg:gap-x-50 md:p-5">
         {/* Left Section of this page */}
-        <div className="flex flex-col lg:w-[30%] md:w-[45%]">
+        <div className="flex flex-col md:w-[45%] lg:w-[30%]">
           <h2 className="font-raleway font-bold text-[20px] lg:text-[32px] md:text-[28px] capitalize leading-5 md:leading-7 lg:leading-10">
             refer Your friends and win rewards
           </h2>
@@ -37,7 +37,7 @@ const Refer = () => {
           </div>
         </div>
         {/* Right Section of this page*/}
-        <div className="flex flex-col lg:w-[30%] md:w-[45%]">
+        <div className="flex flex-col md:w-[45%] lg:w-[30%]">
           <h2 className="font-raleway font-bold text-[20px] lg:text-[32px] md:text-[28px] capitalize leading-5 md:leading-7 lg:leading-10">
             grow with Your community
           </h2>

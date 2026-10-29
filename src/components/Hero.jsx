@@ -13,7 +13,7 @@ function Hero() {
         className="flex flex-col items-center lg:min-h-screen bg-center bg-cover p-5"
         style={{ background: `url(${HeroBackground})` }}
       >
-        <div className="">
+        <div className="flex flex-col justify-center">
           <div className="md:flex md:py-20">
             <div className="">
               <div className="w-auto">
@@ -52,8 +52,8 @@ function Hero() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-row gap-1 md:gap-0  w-[95%] md:grid-cols-4 cursor-pointer">
-            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-amber-50 md:w-[85%]">
+          <div className="grid grid-cols-2 md:grid-row gap-1 md:gap-0  w-[90%] md:grid-cols-4 cursor-pointer">
+            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-[rgba(211,205,205,0.5)] md:w-[85%]">
               <h2 className="text-15px] xl:text-[25px] lg:text-[20px] md:text-[15px]  text-center font-bold">
                 $130 Bn+
               </h2>
@@ -61,7 +61,7 @@ function Hero() {
                 Processed in 5+ Years
               </p>
             </div>
-            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-amber-50 md:w-[85%]">
+            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-[rgba(211,205,205,0.5)] md:w-[85%]">
               <h2 className="text-[15px] xl:text-[25px] lg:text-[20px] md:text-[15px]  text-center font-bold">
                 6 Mn+
               </h2>
@@ -69,7 +69,7 @@ function Hero() {
                 User available Worldwide
               </p>
             </div>
-            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-amber-50 md:w-[85%]">
+            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-[rgba(211,205,205,0.5)] md:w-[85%]">
               <h2 className="text-[15px] xl:text-[25px] lg:text-[20px] md:text-[15px]  text-center font-bold">
                 70+
               </h2>
@@ -77,7 +77,7 @@ function Hero() {
                 Supported cryptocurrencies
               </p>
             </div>
-            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-amber-50 md:w-[85%]">
+            <div className=" bg-[rgba(217,217,217,0.1)] p-2 rounded-xl hover:bg-[rgba(217,217,217,0.5)] border border-[rgba(211,205,205,0.5)] md:w-[85%]">
               <h2 className="text-[15px] xl:text-[25px] lg:text-[20px] md:text-[15px]  text-center font-bold">
                 200+
               </h2>
